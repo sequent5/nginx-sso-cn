@@ -11,7 +11,7 @@ import (
 )
 
 var mfaLoginField = plugins.LoginField{
-	Label:       "MFA Token",
+	Label:       "TOTP验证码",
 	Name:        plugins.MFALoginFieldName,
 	Placeholder: "(optional)",
 	Type:        "text",
