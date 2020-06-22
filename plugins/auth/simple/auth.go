@@ -149,13 +149,13 @@ func (a AuthSimple) Login(res http.ResponseWriter, r *http.Request) (string, []p
 func (a AuthSimple) LoginFields() (fields []plugins.LoginField) {
 	return []plugins.LoginField{
 		{
-			Label:       "Username",
+			Label:       "用户名",
 			Name:        "username",
 			Placeholder: "Username",
 			Type:        "text",
 		},
 		{
-			Label:       "Password",
+			Label:       "密码",
 			Name:        "password",
 			Placeholder: "****",
 			Type:        "password",
