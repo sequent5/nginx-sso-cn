@@ -130,6 +130,7 @@ func main() {
 		log.WithError(err).Fatal("Unable to initialize modules")
 	}
 
+	http.Handle("/images/", http.FileServer(http.Dir(cfg.TemplateDir)))
 	http.HandleFunc("/", handleRootRequest)
 	http.HandleFunc("/auth", handleAuthRequest)
 	http.HandleFunc("/debug", handleLoginDebug)
